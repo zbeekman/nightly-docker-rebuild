@@ -1,5 +1,10 @@
 #!/usr/env bash
 
+set -o verbose
+set -o pipefail
+set -o nounset
+set -o errexit
+
 # Make sure you create encrypted variables DH_END_POINT_1, DH_END_POINT_2 ... DH_END_POINT_N for each docker build you want to trigger
 # These end point URLs have your secret token in them so make sure to use:
 #    `travis env set DH_END_POINT_1 https://registry.hub.docker.com/u/<USER>/<REPO>/trigger/<TOKEN>/`
