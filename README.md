@@ -21,7 +21,7 @@ While Travis-CI itself can be used to build docker images, some will time out be
  4. `[sudo] gem install travis`
  5. `travis login`
  6. `travis enable`
- 7. Get your Docker Hub project end point URL and token from https://hub.docker.com/r/<USER>/<REPO>/~/settings/automated-builds/
+ 7. Get your Docker Hub project end point URL and token from `https://hub.docker.com/r/<USER>/<REPO>/~/settings/automated-builds/`
  8. `travis env set DH_END_POINT_1 https://registry.hub.docker.com/u/<USER>/<REPO>/trigger/<TOKEN>/` # create encrypted Travis-CI variable to store private end point and token
  9. Repeat for an additional nighly builds you want to setup and increment the number on `DH_END_POINT_<N>`
  10. Go to https://nightli.es and enable `nightly-docker-rebuild`
