@@ -1,9 +1,11 @@
+[![Build Status](https://travis-ci.org/zbeekman/nightly-docker-rebuild.svg?branch=master)](https://travis-ci.org/zbeekman/nightly-docker-rebuild)
+
 # nightly-docker-rebuild
 Use nightli.es to rebuild N docker images on hub.docker.com
 
 ## Why?
 
-I use this to rebuild GCC trunk in a docker container on a nightly basis. If you're interested in this take a look at this:
+I use this to rebuild GCC trunk in a docker container on a nightly basis. If you're interested, take a look at this:
 https://hub.docker.com/r/zbeekman/docker-gcc-build/.
 
 [Travis-CI.org](https://travis-ci.org) is great but long builds can time out, which is a giant PITA. Docker to the rescue!
