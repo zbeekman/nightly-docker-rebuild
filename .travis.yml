@@ -1,9 +1,11 @@
 sudo: false
 language: generic
+git:
+  depth: 5
 addons:
   apt:
     packages:
       - curl
 
 script:
-  - ./trigger_docker_builds.sh
+  - date && time ./trigger_docker_builds.sh
