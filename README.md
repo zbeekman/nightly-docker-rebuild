@@ -1,13 +1,18 @@
 [![Build Status](https://travis-ci.org/zbeekman/nightly-docker-rebuild.svg?branch=master)](https://travis-ci.org/zbeekman/nightly-docker-rebuild)
 [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)]()
-[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?hashtags=nightly%2Cdocker%2Cbuild&related=docker%2Ctravisci&text=Rebuild%20your%20docker%20images%20on%20a%20nightly%20basis%21&url=https%3A//github.com/zbeekman/nightly-docker-rebuild&via=zbeekman)
-[![Twitter Follow](https://img.shields.io/twitter/follow/zbeekman.svg?style=social&label=Follow)](https://twitter.com/intent/follow?screen_name=zbeekman)
 [![GitHub forks](https://img.shields.io/github/forks/zbeekman/nightly-docker-rebuild.svg?style=social&label=Fork)](https://github.com/zbeekman/nightly-docker-rebuild/fork)
 [![GitHub stars](https://img.shields.io/github/stars/zbeekman/nightly-docker-rebuild.svg?style=social&label=Star)](https://github.com/zbeekman/nightly-docker-rebuild)
 [![GitHub stars](https://img.shields.io/github/watchers/zbeekman/nightly-docker-rebuild.svg?style=social&label=Watch)](https://github.com/zbeekman/nightly-docker-rebuild)
+[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?hashtags=nightly%2Cdocker%2Cbuild&related=docker%2Ctravisci&text=Rebuild%20your%20docker%20images%20on%20a%20nightly%20basis%21&url=https%3A//github.com/zbeekman/nightly-docker-rebuild&via=zbeekman)
 
-# :moon: :whale: :hammer_and_wrench: nightly-docker-rebuild :package: :whale2: :sparkles:
-Use [nightli.es] to rebuild N docker images on [hub.docker.com]
+<h1 align="center">
+:moon: :whale: :hammer_and_wrench: nightly-docker-rebuild :package: :whale2: :sparkles:
+</h1>
+Use [nightli.es] to rebuild N docker images on [hub.docker.com], [setup] takes less than two minutes! :zap:
+
+<p align="center">
+  <img src="http://i.giphy.com/4AC11GmQzFVKg.gif" alt="Whale launcher" data-canonical-src="http://i.giphy.com/4AC11GmQzFVKg.gif" style="max-width:100%;">
+</p>
 
 ## Why?
 
@@ -32,8 +37,14 @@ While Travis-CI itself can be used to build docker images, some will time out be
  7. Get your Docker Hub project end point URL and token from `https://hub.docker.com/r/<USER>/<REPO>/~/settings/automated-builds/`
  8. create encrypted Travis-CI variable to store private end point and token: `travis env set DH_END_POINT_1 https://registry.hub.docker.com/u/<USER>/<REPO>/trigger/<TOKEN>/`
  9. Repeat for an additional nighly builds you want to setup and increment the number on `DH_END_POINT_<N>`
- 10. Go to https://nightli.es and enable `nightly-docker-rebuild` after [logging in]:[nightli.es]
+ 10. Go to https://nightli.es and enable `nightly-docker-rebuild` after [logging in][nightli.es]
+
+---
+
+[![GitHub followers](https://img.shields.io/github/followers/zbeekman.svg?style=social&label=Follow)](https://github.com/zbeekman)
+[![Twitter Follow](https://img.shields.io/twitter/follow/zbeekman.svg?style=social&label=Follow)](https://twitter.com/intent/follow?screen_name=zbeekman)
 
 [nightli.es]: https://nightli.es/login
 [hub.docker.com]: https://hub.docker.com
 [GCC trunk in a docker container]: https://github.com/zbeekman/nightly-gcc-trunk-docker-image
+[setup]: #how
