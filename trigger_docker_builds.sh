@@ -46,7 +46,8 @@ set -o errexit
 #   `travis env set DH_END_POINT_1 https://registry.hub.docker.com/u/<USER>/<REPO>/trigger/<TOKEN>/`
 
 for DH_URL_W_TOKEN in ${!DH_END_POINT*}; do
-  curl -H "Content-Type: application/json" --data '{"build": true}' -X POST "${!DH_URL_W_TOKEN}"
+  time curl -H "Content-Type: application/json" --data '{"build": true}' -X POST "${!DH_URL_W_TOKEN}" \
+    && echo "Sent request to rebuild ${DH_URL_W_TOKEN%/*/}"
 done
 
 # other examples
