@@ -76,7 +76,7 @@ How
 [travis builds]: https://travis-ci.org/zbeekman/nightly-docker-rebuild/builds "history of builds on Travis-CI"
 [build badge]: https://api.travis-ci.org/zbeekman/nightly-docker-rebuild.svg?branch=master
 [latest build]: https://travis-ci.org/zbeekman/nightly-docker-rebuild
-[maintained badge]: https://img.shields.io/maintenance/yes/2017.svg
+[maintained badge]: https://img.shields.io/maintenance/yes/2018.svg
 [commit history]: https://github.com/zbeekman/nightly-docker-rebuild/commits/master
 [forks badge]: https://img.shields.io/github/forks/zbeekman/nightly-docker-rebuild.svg?style=social&label=Fork
 [do fork]: https://github.com/zbeekman/nightly-docker-rebuild/fork
