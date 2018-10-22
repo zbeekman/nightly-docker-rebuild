@@ -17,6 +17,14 @@ Use [nightli.es] to rebuild N docker images on [hub.docker.com],
 
 </div>
 
+Update
+------
+
+Since I originally wrote this guide, [Travis-CI] has added
+[cron jobs](https://docs.travis-ci.com/user/cron-jobs/). This means,
+that you no longer need to enable and register with [nightli.es].
+The entire setup can be done with Travis-CI alone.
+
 Why
 ---
 
@@ -25,7 +33,7 @@ I use this to rebuild
 basis. If you're interested, please take a look at
 [my automated docker hub setup][Dhub GCC trunk in docker].
 
-[Travis-CI.org](https://travis-ci.org) is great but long builds can
+[Travis-CI] is great but long builds can
 time out, which is a giant PITA. Docker to the rescue!  By using
 [docker with Travis-CI](https://docs.travis-ci.com/user/docker/) you
 get to skip long builds for dependencies.  While Travis-CI itself can
@@ -43,7 +51,7 @@ How
  1. Clone: `git clone
     https://github.com/<your_username>/nightly-docker-rebuild && cd
     nightly-docker-rebuild`
- 1. Enable and setup Travis-CI.org (through the online UI or by
+ 1. Enable and setup [Travis-CI] (through the online UI or by
     following the following steps)
  1. `[sudo] gem install travis`
  1. `travis login`
@@ -67,6 +75,7 @@ How
 
 </div>
 
+[Travis-CI]: https://travis-ci.com
 [nightli.es]: https://nightli.es
 [nightli.es login]: https://nightli.es/login
 [hub.docker.com]: https://hub.docker.com
